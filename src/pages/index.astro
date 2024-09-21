@@ -1,5 +1,5 @@
 ---
-
+import VideoCarousel from "../components/videoCarousel.astro";
 ---
 
 <html lang="en">
@@ -47,11 +47,6 @@
 							>Clases</a
 						>
 						<a
-							href="#testimonios"
-							class="text-gray-600 hover:text-[#e784b0] text-xl"
-							>Testimonios</a
-						>
-						<a
 							href="#precios"
 							class="text-gray-600 hover:text-[#e784b0] text-xl"
 							>Precios</a
@@ -93,7 +88,7 @@
 			</div>
 
 			<!-- Mobile Menu -->
-			<div id="mobile-menu" class="md:hidden hidden">
+			<div id="mobile-menu" class="md:hidden hidden bg-white z-50">
 				<a
 					href="#inicio"
 					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
@@ -108,11 +103,6 @@
 					href="#clases"
 					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
 					>Clases</a
-				>
-				<a
-					href="#testimonios"
-					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-					>Testimonios</a
 				>
 				<a
 					href="#precios"
@@ -181,45 +171,133 @@
 				¿Por qué elegirnos?
 			</h1>
 			<p class="text-xl tracking-wide text-center w-1/2 mx-auto pt-4">
-				Al igual que un buen conductor necesita una brújula para
-				orientarse, nosotros te brindamos las herramientas necesarias
-				para que encuentres tu propio rumbo en las calles y te sientas
-				segura y confiada al volante.
+				En Mujer Valiente al Volante, creemos que aprender a conducir no
+				solo es una habilidad, sino una oportunidad para ganar confianza
+				en ti mismo. Nuestras clases no se limitan a la técnica de
+				manejo; son una experiencia integral para vencer el miedo,
+				aprender a tomar decisiones seguras en la carretera y disfrutar
+				del proceso de aprendizaje.
 			</p>
 			<div class="flex gap-6 w-11/12 mx-auto">
 				<div
-					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center"
+					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
 				>
 					<svg
-						class="icon icon-tabler icon-tabler-mood-heart"
-						width="44"
-						height="44"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="#2c3e50"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
+						height="40px"
+						viewBox="0 -960 960 960"
+						width="40px"
+						fill="#fffFFF"
+						><path
+							d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400H276q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z"
+						></path></svg
 					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"
-						></path>
-						<path d="M21 12a9 9 0 1 0 -8.012 8.946"></path>
-						<path d="M9 10h.01"></path>
-						<path d="M15 10h.01"></path>
-						<path d="M9.5 15a3.59 3.59 0 0 0 2.774 .99"></path>
-						<path
-							d="M18.994 21.5l2.518 -2.58a1.74 1.74 0 0 0 .004 -2.413a1.627 1.627 0 0 0 -2.346 -.005l-.168 .172l-.168 -.172a1.627 1.627 0 0 0 -2.346 -.004a1.74 1.74 0 0 0 -.004 2.412l2.51 2.59z"
-						></path>
-					</svg>
-					<h1>
-						Instructores empáticos y capacitados para crear un
-						ambiente de aprendizaje seguro.
+					<h1 class="text-white">Enfoque empático:</h1>
+					<h1 class="text-white">
+						Nuestros instructores enseñan de manera paciente y
+						respetuosa, adaptándose a las necesidades de cada
+						alumno.
 					</h1>
 				</div>
-				<div class="w-1/5 h-48 border"></div>
-				<div class="w-1/5 h-48 border"></div>
-				<div class="w-1/5 h-48 border"></div>
-				<div class="w-1/5 h-48 border"></div>
+				<div
+					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+				>
+					<svg
+						height="40px"
+						viewBox="0 -960 960 960"
+						width="40px"
+						fill="#fffFFF"
+						><path
+							d="M702-480 560-622l57-56 85 85 170-170 56 57-226 226Zm-342 0q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 260Zm0-340Z"
+						></path></svg
+					>
+					<h1 class="text-white">Clases personalizadas:</h1>
+					<h1 class="text-white">
+						Diseñamos las clases a tu ritmo, ya seas principiante o
+						buscando perfeccionarte para el examen.
+					</h1>
+				</div>
+				<div
+					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+				>
+					<svg
+						height="40px"
+						viewBox="0 -960 960 960"
+						width="40px"
+						fill="#fffFFF"
+						><path
+							d="M560-360q17 0 29.5-12.5T602-402q0-17-12.5-29.5T560-444q-17 0-29.5 12.5T518-402q0 17 12.5 29.5T560-360Zm-30-128h60q0-29 6-42.5t28-35.5q30-30 40-48.5t10-43.5q0-45-31.5-73.5T560-760q-41 0-71.5 23T446-676l54 22q9-25 24.5-37.5T560-704q24 0 39 13.5t15 36.5q0 14-8 26.5T578-596q-33 29-40.5 45.5T530-488ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"
+						></path></svg
+					>
+					<h1 class="text-white">Preparación integral:</h1>
+					<h1 class="text-white">
+						No solo te preparamos para el examen práctico, sino
+						también para conducir con seguridad en cualquier
+						situación.
+					</h1>
+				</div>
+				<div
+					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+				>
+					<svg
+						height="40px"
+						viewBox="0 -960 960 960"
+						width="40px"
+						fill="#fffFFF"
+						><path
+							d="M480-260q68 0 123.5-38.5T684-400H276q25 63 80.5 101.5T480-260ZM312-520l44-42 42 42 42-42-84-86-86 86 42 42Zm250 0 42-42 44 42 42-42-86-86-84 86 42 42ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z"
+						></path></svg
+					>
+					<h1 class="text-white">Ambiente seguro y cómodo:</h1>
+					<h1 class="text-white">
+						Nuestros alumnos siempre se sienten acompañados y
+						apoyados, lo que reduce el estrés al aprender a
+						conducir.
+					</h1>
+				</div>
+				<div
+					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+				>
+					<svg
+						height="40px"
+						viewBox="0 -960 960 960"
+						width="40px"
+						fill="#fffFFF"
+						><path
+							d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-360h160v-200H160v200Zm240 0h160v-200H400v200Zm240 0h160v-200H640v200ZM320-240v-200H160v200h160Zm80 0h160v-200H400v200Zm240 0h160v-200H640v200Z"
+						></path></svg
+					>
+					<h1 class="text-white">Horarios flexibles:</h1>
+					<h1 class="text-white">
+						Nos adaptamos a tu agenda, ofreciendo clases en horarios
+						que se ajusten a tus necesidades diarias.
+					</h1>
+				</div>
+			</div>
+			<div class="mx-4">
+				<h1
+					class="text-2xl tracking-wider text-center text-white w-fit mx-auto bg-[#e784b0] px-2 pt-2"
+				>
+					Testimonios
+				</h1>
+				<div class="mx-auto flex w-3/4">
+					<div
+						class="w-1/2 flex flex-col items-center justify-center gap-4 px-4"
+					>
+						<h1
+							class="text-2xl tracking-wider text-center font-normal"
+						>
+							Historias de éxito
+						</h1>
+						<p class="text-xl text-center tracking-wide font-light">
+							Nuestros alumnos no solo aprenden a conducir, sino
+							que también descubren la confianza en sí mismos.
+							Aquí están algunas de sus experiencias:
+						</p>
+					</div>
+					<div class="w-1/2 px-4">
+						<VideoCarousel />
+					</div>
+				</div>
 			</div>
 		</section>
 	</body>
@@ -232,4 +310,48 @@
 	menuButton.addEventListener("click", () => {
 		mobileMenu.classList.toggle("hidden");
 	});
+	const carousel = document.getElementById("carousel");
+	const nextButton = document.getElementById("next");
+	const prevButton = document.getElementById("prev");
+
+	let currentIndex = 0;
+	const totalVideos = carousel.children.length;
+
+	// Función para pausar todos los videos excepto el actual
+	function pauseAllVideos() {
+		const videos = carousel.querySelectorAll("video");
+		videos.forEach((video, index) => {
+			if (index !== currentIndex && !video.paused) {
+				video.pause(); // Pausa el video si no está en la slide actual
+			}
+		});
+	}
+
+	// Evento al hacer clic en el botón "Siguiente"
+	nextButton.addEventListener("click", () => {
+		if (currentIndex < totalVideos - 1) {
+			currentIndex++;
+		} else {
+			currentIndex = 0;
+		}
+		updateCarousel();
+	});
+
+	// Evento al hacer clic en el botón "Anterior"
+	prevButton.addEventListener("click", () => {
+		if (currentIndex > 0) {
+			currentIndex--;
+		} else {
+			currentIndex = totalVideos - 1;
+		}
+		updateCarousel();
+	});
+
+	// Función para actualizar la posición del carousel
+	function updateCarousel() {
+		const offset = currentIndex * carousel.clientWidth;
+		carousel.style.transform = `translateX(-${offset}px)`;
+
+		pauseAllVideos(); // Pausar los videos fuera de la vista
+	}
 </script>

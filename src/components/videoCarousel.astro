@@ -1,0 +1,101 @@
+<div class="container mx-auto mt-8">
+    <!-- Contenedor del Carousel con un ancho de 1/4 del viewport -->
+    <div class="relative overflow-hidden mx-auto">
+        <!-- Botón anterior -->
+        <button
+            id="prev"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        >
+            &#9664;
+        </button>
+
+        <!-- Contenedor de los videos -->
+        <div
+            id="carousel"
+            class="flex transition-transform duration-300 ease-in-out"
+        >
+            <!-- Video 1 -->
+            <div class="w-full flex-shrink-0">
+                <video class="w-full h-[600px] object-cover" controls>
+                    <source
+                        src="/video_testimonios/video_1.mp4"
+                        type="video/mp4"
+                    />
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            <!-- Video 2 -->
+            <div class="w-full flex-shrink-0">
+                <video class="w-full h-[600px] object-cover" controls>
+                    <source
+                        src="/video_testimonios/video_2.mp4"
+                        type="video/mp4"
+                    />
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            <!-- Video 3 -->
+            <div class="w-full flex-shrink-0">
+                <video class="w-full h-[600px] object-cover" controls>
+                    <source
+                        src="/video_testimonios/video_3.mp4"
+                        type="video/mp4"
+                    />
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </div>
+
+        <!-- Botón siguiente -->
+        <button
+            id="next"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        >
+            &#9654;
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const carousel = document.getElementById("carousel");
+        const nextButton = document.getElementById("next");
+        const prevButton = document.getElementById("prev");
+
+        let currentIndex = 0;
+        const totalVideos = carousel.children.length;
+
+        // Pausar los videos que no están visibles
+        function pauseAllVideos() {
+            const videos = carousel.querySelectorAll("video");
+            videos.forEach((video, index) => {
+                if (index !== currentIndex && !video.paused) {
+                    video.pause();
+                }
+            });
+        }
+
+        nextButton.addEventListener("click", () => {
+            if (currentIndex < totalVideos - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateCarousel();
+        });
+
+        prevButton.addEventListener("click", () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalVideos - 1;
+            }
+            updateCarousel();
+        });
+
+        function updateCarousel() {
+            const offset = currentIndex * carousel.clientWidth;
+            carousel.style.transform = `translateX(-${offset}px)`;
+            pauseAllVideos();
+        }
+    </script>
+</div>
