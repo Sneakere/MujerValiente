@@ -8,9 +8,228 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="font-roboto">
+		<nav class="bg-white shadow-md fixed w-full top-0 z-50 h-28">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between">
+					<!-- Logo -->
+					<div class="flex items-center">
+						<img class="h-28" src="/logo-mujer-otro.png" alt="" />
+					</div>
+
+					<!-- Menu (Desktop) -->
+					<div class="hidden md:flex space-x-8 items-center">
+						<a
+							href="#inicio"
+							class="text-gray-600 hover:text-[#e784b0] text-xl"
+							>Mujer Valiente al Volante</a
+						>
+						<a
+							href="#porque-nosotros"
+							class="text-gray-600 hover:text-[#e784b0] text-xl"
+							>¿Por qué Nosotros?</a
+						>
+						<a
+							href="#clases"
+							class="text-gray-600 hover:text-[#e784b0] text-xl"
+							>Clases</a
+						>
+						<a
+							href="#testimonios"
+							class="text-gray-600 hover:text-[#e784b0] text-xl"
+							>Testimonios</a
+						>
+						<a
+							href="#precios"
+							class="text-gray-600 hover:text-[#e784b0] text-xl"
+							>Precios</a
+						>
+						<a
+							href="#contacto"
+							class="text-gray-600 hover:text-[#e784b0] text-xl"
+							>Contacto</a
+						>
+						<a
+							href="#reserva"
+							class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500"
+							>Reserva tu Clase</a
+						>
+					</div>
+
+					<!-- Mobile Menu Button -->
+					<div class="md:hidden flex items-center">
+						<button
+							id="mobile-menu-button"
+							class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+						>
+							<svg
+								class="w-6 h-6"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h16M4 18h16"></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="md:hidden hidden">
+				<a
+					href="#inicio"
+					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+					>Inicio</a
+				>
+				<a
+					href="#porque-nosotros"
+					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+					>¿Por qué Nosotros?</a
+				>
+				<a
+					href="#clases"
+					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+					>Clases</a
+				>
+				<a
+					href="#testimonios"
+					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+					>Testimonios</a
+				>
+				<a
+					href="#precios"
+					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+					>Precios</a
+				>
+				<a
+					href="#contacto"
+					class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+					>Contacto</a
+				>
+				<a
+					href="#reserva"
+					class="block bg-indigo-600 text-white px-4 py-2 text-center mt-2 rounded-md hover:bg-indigo-500"
+					>Reserva tu Clase</a
+				>
+			</div>
+		</nav>
+		<section class="pt-48 flex">
+			<div class="w-1/2 gap-6 flex flex-col items-center justify-center">
+				<h1 class="w-2/3 text-center text-3xl font-normal">
+					Más que un curso, un viaje hacia la seguridad y la confianza
+				</h1>
+				<h1 class="w-2/3 text-center text-2xl font-light">
+					Mujer Valiente al Volante es más que un simple curso de
+					manejo. Es un viaje de autodescubrimiento y empoderamiento,
+					donde guiamos a nuestros alumnos a alcanzar sus metas al
+					volante. Creemos que cada persona tiene un potencial
+					infinito y que, con la práctica adecuada y la confianza en
+					sí mismos, pueden conquistar cualquier camino.
+				</h1>
+			</div>
+			<div class="relative w-1/2 flex item-center justify-center">
+				<img
+					class="border-4 border-[#e784b0] w-2/3"
+					src="/hero-img.jpg"
+					alt=""
+				/>
+				<div class="absolute -bottom-6">
+					<h1
+						class="bg-[#e784b0] text-white text-xl tracking-wider px-2"
+					>
+						Lilian Segura Cancino
+					</h1>
+					<p class="bg-[#e784b0] text-white text-center">Profesora</p>
+				</div>
+			</div>
+			<div
+				class="absolute w-full top-32 text-white text-center flex flex-col items-center justify-center"
+			>
+				<h1
+					class="text-2xl tracking-wider bg-[#e784b0] w-fit px-2 pt-2"
+				>
+					Encuentra tu camino al volante con confianza y seguridad
+				</h1>
+				<h2 class="text-xl tracking-wide bg-[#e784b0] w-fit px-2 pb-2">
+					En Mujer Valiente al Volante, transformamos el aprendizaje
+					de conducción en una experiencia de empoderamiento.
+				</h2>
+			</div>
+		</section>
+		<section class="pt-28 flex flex-col gap-4">
+			<h1
+				class="text-2xl tracking-wider text-center text-white w-fit mx-auto bg-[#e784b0] px-2 pt-2"
+			>
+				¿Por qué elegirnos?
+			</h1>
+			<p class="text-xl tracking-wide text-center w-1/2 mx-auto pt-4">
+				Al igual que un buen conductor necesita una brújula para
+				orientarse, nosotros te brindamos las herramientas necesarias
+				para que encuentres tu propio rumbo en las calles y te sientas
+				segura y confiada al volante.
+			</p>
+			<div class="flex gap-6 w-11/12 mx-auto">
+				<div
+					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center"
+				>
+					<svg
+						class="icon icon-tabler icon-tabler-mood-heart"
+						width="44"
+						height="44"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="#2c3e50"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"
+						></path>
+						<path d="M21 12a9 9 0 1 0 -8.012 8.946"></path>
+						<path d="M9 10h.01"></path>
+						<path d="M15 10h.01"></path>
+						<path d="M9.5 15a3.59 3.59 0 0 0 2.774 .99"></path>
+						<path
+							d="M18.994 21.5l2.518 -2.58a1.74 1.74 0 0 0 .004 -2.413a1.627 1.627 0 0 0 -2.346 -.005l-.168 .172l-.168 -.172a1.627 1.627 0 0 0 -2.346 -.004a1.74 1.74 0 0 0 -.004 2.412l2.51 2.59z"
+						></path>
+					</svg>
+					<h1>
+						Instructores empáticos y capacitados para crear un
+						ambiente de aprendizaje seguro.
+					</h1>
+				</div>
+				<div class="w-1/5 h-48 border"></div>
+				<div class="w-1/5 h-48 border"></div>
+				<div class="w-1/5 h-48 border"></div>
+				<div class="w-1/5 h-48 border"></div>
+			</div>
+		</section>
 	</body>
 </html>
+
+<script>
+	const menuButton = document.getElementById("mobile-menu-button");
+	const mobileMenu = document.getElementById("mobile-menu");
+
+	menuButton.addEventListener("click", () => {
+		mobileMenu.classList.toggle("hidden");
+	});
+</script>
