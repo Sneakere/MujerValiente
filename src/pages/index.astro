@@ -121,12 +121,14 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				>
 			</div>
 		</nav>
-		<section class="pt-48 flex">
-			<div class="w-1/2 gap-6 flex flex-col items-center justify-center">
+		<section class="pt-32 md:pt-48 flex flex-col md:flex-row">
+			<div
+				class="w-full md:w-1/2 gap-6 flex flex-col items-center justify-center"
+			>
 				<h1 class="w-2/3 text-center text-3xl font-normal">
 					Más que un curso, un viaje hacia la seguridad y la confianza
 				</h1>
-				<h1 class="w-2/3 text-center text-2xl font-light">
+				<h1 class="w-3/4 md:w-2/3 text-center text-2xl font-light">
 					Mujer Valiente al Volante es más que un simple curso de
 					manejo. Es un viaje de autodescubrimiento y empoderamiento,
 					donde guiamos a nuestros alumnos a alcanzar sus metas al
@@ -135,7 +137,9 @@ import VideoCarousel from "../components/videoCarousel.astro";
 					sí mismos, pueden conquistar cualquier camino.
 				</h1>
 			</div>
-			<div class="relative w-1/2 flex item-center justify-center">
+			<div
+				class="relative w-full md:w-1/2 pt-10 md:pt-0 flex item-center justify-center"
+			>
 				<img
 					class="border-4 border-[#e784b0] w-2/3"
 					src="/hero-img.jpg"
@@ -151,7 +155,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				</div>
 			</div>
 			<div
-				class="absolute w-full top-32 text-white text-center flex flex-col items-center justify-center"
+				class="md:absolute w-full md:top-32 pt-10 md:pt-0 text-white text-center flex flex-col items-center justify-center"
 			>
 				<h1
 					class="text-2xl tracking-wider bg-[#e784b0] w-fit px-2 pt-2"
@@ -164,13 +168,15 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				</h2>
 			</div>
 		</section>
-		<section class="pt-28 flex flex-col gap-4">
+		<section class="pt-10 md:pt-28 flex flex-col gap-4">
 			<h1
 				class="text-2xl tracking-wider text-center text-white w-fit mx-auto bg-[#e784b0] px-2 pt-2"
 			>
 				¿Por qué elegirnos?
 			</h1>
-			<p class="text-xl tracking-wide text-center w-1/2 mx-auto pt-4">
+			<p
+				class="text-xl tracking-wide text-center w-3/4 md:w-1/2 mx-auto pt-4"
+			>
 				En Mujer Valiente al Volante, creemos que aprender a conducir no
 				solo es una habilidad, sino una oportunidad para ganar confianza
 				en ti mismo. Nuestras clases no se limitan a la técnica de
@@ -178,9 +184,9 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				aprender a tomar decisiones seguras en la carretera y disfrutar
 				del proceso de aprendizaje.
 			</p>
-			<div class="flex gap-6 w-11/12 mx-auto">
+			<div class="flex flex-col md:flex-row gap-6 w-11/12 mx-auto">
 				<div
-					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+					class="w-full md:w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
 				>
 					<svg
 						height="40px"
@@ -199,7 +205,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 					</h1>
 				</div>
 				<div
-					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+					class="w-full md:w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
 				>
 					<svg
 						height="40px"
@@ -217,7 +223,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 					</h1>
 				</div>
 				<div
-					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+					class="w-full md:w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
 				>
 					<svg
 						height="40px"
@@ -236,7 +242,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 					</h1>
 				</div>
 				<div
-					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+					class="w-full md:w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
 				>
 					<svg
 						height="40px"
@@ -255,7 +261,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 					</h1>
 				</div>
 				<div
-					class="w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
+					class="w-full md:w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
 				>
 					<svg
 						height="40px"
@@ -279,12 +285,12 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				>
 					Testimonios
 				</h1>
-				<div class="mx-auto flex w-3/4">
+				<div class="mx-auto flex flex-col md:flex-row w-3/4">
 					<div
-						class="w-1/2 flex flex-col items-center justify-center gap-4 px-4"
+						class="w-full md:w-1/2 flex flex-col items-center justify-center gap-4 px-4"
 					>
 						<h1
-							class="text-2xl tracking-wider text-center font-normal"
+							class="text-2xl tracking-wider text-center font-normal pt-4 md:pt-0"
 						>
 							Historias de éxito
 						</h1>
@@ -294,7 +300,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 							Aquí están algunas de sus experiencias:
 						</p>
 					</div>
-					<div class="w-1/2 px-4">
+					<div class="w-full md:w-1/2 px-4">
 						<VideoCarousel />
 					</div>
 				</div>
