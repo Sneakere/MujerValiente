@@ -128,7 +128,9 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				>
 			</div>
 		</nav>
-		<section class="pt-32 md:pt-48 flex flex-col md:flex-row">
+		<section
+			class="pt-32 md:pt-48 flex flex-col md:flex-row bg-[url('/MujerValiente/section_1_bg.jpg')] bg-blur-lg bg-[#e784b0]/20"
+		>
 			<div
 				class="w-full md:w-1/2 gap-6 flex flex-col items-center justify-center"
 			>
@@ -323,48 +325,4 @@ import VideoCarousel from "../components/videoCarousel.astro";
 	menuButton.addEventListener("click", () => {
 		mobileMenu.classList.toggle("hidden");
 	});
-	const carousel = document.getElementById("carousel");
-	const nextButton = document.getElementById("next");
-	const prevButton = document.getElementById("prev");
-
-	let currentIndex = 0;
-	const totalVideos = carousel.children.length;
-
-	// Función para pausar todos los videos excepto el actual
-	function pauseAllVideos() {
-		const videos = carousel.querySelectorAll("video");
-		videos.forEach((video, index) => {
-			if (index !== currentIndex && !video.paused) {
-				video.pause(); // Pausa el video si no está en la slide actual
-			}
-		});
-	}
-
-	// Evento al hacer clic en el botón "Siguiente"
-	nextButton.addEventListener("click", () => {
-		if (currentIndex < totalVideos - 1) {
-			currentIndex++;
-		} else {
-			currentIndex = 0;
-		}
-		updateCarousel();
-	});
-
-	// Evento al hacer clic en el botón "Anterior"
-	prevButton.addEventListener("click", () => {
-		if (currentIndex > 0) {
-			currentIndex--;
-		} else {
-			currentIndex = totalVideos - 1;
-		}
-		updateCarousel();
-	});
-
-	// Función para actualizar la posición del carousel
-	function updateCarousel() {
-		const offset = currentIndex * carousel.clientWidth;
-		carousel.style.transform = `translateX(-${offset}px)`;
-
-		pauseAllVideos(); // Pausar los videos fuera de la vista
-	}
 </script>
