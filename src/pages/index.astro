@@ -130,7 +130,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 		</nav>
 		<section
 			id="inicio"
-			class="bg-[url('/MujerValiente/section_1_bg.jpg')] bg-fixed"
+			class="bg-[url('/MujerValiente/section_1_bg.jpg')] bg-fixed bg-cover"
 		>
 			<div
 				class="backdrop-blur-sm pt-32 md:pt-48 flex flex-col md:flex-row bg-gradient-to-b from-pink-100/20 from-40% via-pink-300/20 via-60% to-pink-400/30 to-90%"
@@ -195,7 +195,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 		</section>
 		<section
 			id="porque-nosotros"
-			class="py-4 md:pt-28 flex flex-col gap-4 bg-gradient-to-b from-white to-pink-100"
+			class="py-4 md:pt-28 flex flex-col gap-8 bg-gradient-to-b from-white to-pink-100"
 		>
 			<h1
 				class="text-2xl tracking-wider text-center text-white w-fit mx-auto bg-[#e784b0] px-2 pt-2"
@@ -203,7 +203,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				¿Por qué elegirnos?
 			</h1>
 			<p
-				class="text-xl tracking-wide text-center w-3/4 md:w-1/2 mx-auto pt-4"
+				class="text-xl tracking-wide text-center w-3/4 md:w-1/2 mx-auto font-light"
 			>
 				En Mujer Valiente al Volante, creemos que aprender a conducir no
 				solo es una habilidad, sino una oportunidad para ganar confianza
@@ -212,7 +212,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				aprender a tomar decisiones seguras en la carretera y disfrutar
 				del proceso de aprendizaje.
 			</p>
-			<div class="flex flex-col md:flex-row gap-6 w-11/12 mx-auto">
+			<div class="flex flex-col md:flex-row gap-3 w-11/12 mx-auto">
 				<div
 					class="w-full md:w-1/5 h-48 border flex gap-2 flex-col items-center justify-center p-4 text-center bg-[#e784b0] rounded-lg"
 				>
@@ -336,19 +336,21 @@ import VideoCarousel from "../components/videoCarousel.astro";
 		</section>
 		<section
 			id="clases"
-			class="bg-[url('/MujerValiente/section_3_bg.jpg')] bg-fixed"
+			class="bg-[url('/MujerValiente/section_3_bg.jpg')] bg-fixed bg-cover"
 		>
 			<div
 				class="backdrop-blur-sm bg-gradient-to-b from-pink-100/20 from-40% via-pink-300/20 via-60% to-pink-400/30 to-90%"
 			>
-				<div class="flex flex-col items-center justify-center gap-4">
+				<div
+					class="flex flex-col items-center justify-center gap-6 gap-4"
+				>
 					<h2
 						class="w-1/2 mx-auto text-center text-3xl text-pink-600 tracking-wide pt-10"
 					>
 						Empodera tu Conducción
 					</h2>
 					<p
-						class="w-1/2 mx-auto text-center tracking-wider font-light text-xl text-white"
+						class="w-1/2 mx-auto text-center tracking-wider font-ligth text-lg text-white"
 					>
 						En Mujer Valiente al Volante, no solo te enseñamos a
 						conducir, te ayudamos a conquistar el volante con
@@ -379,7 +381,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 							>
 								Preparación Teórica
 							</h1>
-							<p class="p-5 text-white backdrop-blur-lg">
+							<p class="p-5 text-white">
 								Cuestionario completo para reforzar tus
 								conocimientos teóricos antes del examen.
 							</p>
@@ -421,7 +423,7 @@ import VideoCarousel from "../components/videoCarousel.astro";
 							<h1
 								class="p-5 bg-gradient-to-b from-white to-pink-100 text-[#e784b0] font-semibold text-xl text-wider"
 							>
-								Acompañamiento Opcional
+								Acompañamiento Opcional *
 							</h1>
 							<p class="p-5 text-white">
 								Opción de que tu instructora te acompañe el día
@@ -438,10 +440,251 @@ import VideoCarousel from "../components/videoCarousel.astro";
 							>
 						</div>
 					</div>
+					<div class="text-white pb-10">
+						<h1>
+							* Entendemos que el día del examen puede ser
+							estresante. Por eso, ofrecemos un servicio especial
+							de acompañamiento:
+						</h1>
+						<ul class="list-disc ps-10">
+							<li>
+								Tu instructora puede reservar la hora del examen
+								por ti.
+							</li>
+							<li>
+								Opción de que te acompañemos el día del examen
+								para darte apoyo moral.
+							</li>
+							<li>
+								Repaso de últimos consejos y técnicas antes de
+								tu prueba.
+							</li>
+							<li class="font-bold text-normal">
+								Servicio disponible por un costo adicional.
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section id="precios" class="h-[1500px]"></section>
+		<section id="precios" class="bg-gradient-to-t from-white to-pink-100">
+			<div class="w-full lg:w-1/2 mx-auto">
+				<div
+					class="flex flex-col items-center justify-center gap-4 pt-10"
+				>
+					<h2 class="text-3xl">Precios</h2>
+					<p
+						class="text-xl tracking-wide text-center font-xl font-light"
+					>
+						Nuestro programa de Coaching está diseñado para
+						brindarte la mejor preparación posible. Invierte en tu
+						seguridad y confianza al volante.
+					</p>
+				</div>
+				<div
+					class="flex flex-col md:flex-row items-stretch justify-center gap-10 pt-10"
+				>
+					<div class="flex flex-col flex-1 border">
+						<div
+							class="py-8 px-5 flex justify-between gap-12 bg-gradient-to-b from-white to-pink-100 text-[#e784b0]"
+						>
+							<h1 class="text-xl">Programa Completo</h1>
+							<p class="p-1 border rounded-xl text-xs">
+								Recomendado
+							</p>
+						</div>
+						<div class="">
+							<h1
+								class="text-3xl font-bold tracking-wide py-4 ps-4"
+							>
+								$80.000
+							</h1>
+							<ul class="flex flex-col gap-3 ps-4 pb-4">
+								<li class="flex gap-2">
+									<span
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-check"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#00b341"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												stroke="none"
+												d="M0 0h24v24H0z"
+												fill="none"></path>
+											<path d="M5 12l5 5l10 -10"></path>
+										</svg></span
+									> 5 clases prácticas de conducción
+								</li>
+								<li class="flex gap-2">
+									<span
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-check"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#00b341"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												stroke="none"
+												d="M0 0h24v24H0z"
+												fill="none"></path>
+											<path d="M5 12l5 5l10 -10"></path>
+										</svg></span
+									> Matrícula incluida
+								</li>
+								<li class="flex gap-2">
+									<span
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-check"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#00b341"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												stroke="none"
+												d="M0 0h24v24H0z"
+												fill="none"></path>
+											<path d="M5 12l5 5l10 -10"></path>
+										</svg></span
+									> Preparación integral para el examen
+								</li>
+								<li class="flex items-center gap-2 text-xs">
+									<span
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-alert-circle"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#9e9e9e"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												stroke="none"
+												d="M0 0h24v24H0z"
+												fill="none"></path>
+											<path
+												d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
+											></path>
+											<path d="M12 8v4"></path>
+											<path d="M12 16h.01"></path>
+										</svg></span
+									> $5.000 de matrícula no reembolsable para reservar
+									tu cupo
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex flex-col flex-1 border">
+						<div
+							class="py-8 px-5 bg-gradient-to-b from-white to-pink-100 text-[#e784b0]"
+						>
+							<h1 class="text-xl">Clase Individual</h1>
+						</div>
+						<div>
+							<h1
+								class="text-3xl font-bold tracking-wide py-4 ps-4"
+							>
+								$15.000
+							</h1>
+							<ul class="flex flex-col gap-3 ps-4 pb-4">
+								<li class="flex gap-2">
+									<span
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-check"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#00b341"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												stroke="none"
+												d="M0 0h24v24H0z"
+												fill="none"></path>
+											<path d="M5 12l5 5l10 -10"></path>
+										</svg></span
+									> 1 clase práctica de conducción
+								</li>
+								<li class="flex gap-2">
+									<span
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-check"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#00b341"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												stroke="none"
+												d="M0 0h24v24H0z"
+												fill="none"></path>
+											<path d="M5 12l5 5l10 -10"></path>
+										</svg></span
+									> Flexibilidad para programar
+								</li>
+								<li class="flex gap-2">
+									<span
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-check"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#00b341"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												stroke="none"
+												d="M0 0h24v24H0z"
+												fill="none"></path>
+											<path d="M5 12l5 5l10 -10"></path>
+										</svg></span
+									> Ideal para reforzar habilidades específicas
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<h1 class="text-center text-gray-500 pt-10 font-sm">
+					¿Tienes preguntas sobre nuestros precios o programas? No
+					dudes en contactarnos para más información.
+				</h1>
+			</div>
+		</section>
 	</body>
 </html>
 
