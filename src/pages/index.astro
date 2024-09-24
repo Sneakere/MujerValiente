@@ -24,14 +24,14 @@ import VideoCarousel from "../components/videoCarousel.astro";
 		/>
 		<title>Mujer Valiente al Volante</title>
 	</head>
-	<body class="font-roboto">
+	<body class="font-roboto scroll-smooth">
 		<nav class="bg-white shadow-md fixed w-full top-0 z-50 h-28">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex justify-between">
 					<!-- Logo -->
 					<div class="flex items-center">
 						<img
-							class="h-28"
+							class="h-20 md:h-28"
 							src="/MujerValiente/logo-mujer-otro.png"
 							alt=""
 						/>
@@ -128,9 +128,12 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				>
 			</div>
 		</nav>
-		<section class="bg-[url('/MujerValiente/section_1_bg.jpg')]">
+		<section
+			id="inicio"
+			class="bg-[url('/MujerValiente/section_1_bg.jpg')] bg-fixed"
+		>
 			<div
-				class="backdrop-blur-sm pt-32 md:pt-48 flex flex-col md:flex-row"
+				class="backdrop-blur-sm pt-32 md:pt-48 flex flex-col md:flex-row bg-gradient-to-b from-pink-100/20 from-40% via-pink-300/20 via-60% to-pink-400/30 to-90%"
 			>
 				<div
 					class="w-full md:w-1/2 gap-6 flex flex-col items-center justify-center"
@@ -190,7 +193,10 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				</div>
 			</div>
 		</section>
-		<section class="pt-10 md:pt-28 flex flex-col gap-4">
+		<section
+			id="porque-nosotros"
+			class="py-4 md:pt-28 flex flex-col gap-4 bg-gradient-to-b from-white to-pink-100"
+		>
 			<h1
 				class="text-2xl tracking-wider text-center text-white w-fit mx-auto bg-[#e784b0] px-2 pt-2"
 			>
@@ -328,6 +334,114 @@ import VideoCarousel from "../components/videoCarousel.astro";
 				</div>
 			</div>
 		</section>
+		<section
+			id="clases"
+			class="bg-[url('/MujerValiente/section_3_bg.jpg')] bg-fixed"
+		>
+			<div
+				class="backdrop-blur-sm bg-gradient-to-b from-pink-100/20 from-40% via-pink-300/20 via-60% to-pink-400/30 to-90%"
+			>
+				<div class="flex flex-col items-center justify-center gap-4">
+					<h2
+						class="w-1/2 mx-auto text-center text-3xl text-pink-600 tracking-wide pt-10"
+					>
+						Empodera tu Conducción
+					</h2>
+					<p
+						class="w-1/2 mx-auto text-center tracking-wider font-light text-xl text-white"
+					>
+						En Mujer Valiente al Volante, no solo te enseñamos a
+						conducir, te ayudamos a conquistar el volante con
+						confianza. Nuestro programa de coaching está diseñado
+						para que superes el examen práctico y te conviertas en
+						una conductora segura y hábil.
+					</p>
+				</div>
+				<div class="w-3/4 mx-auto pt-10 flex-col">
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
+					>
+						<div class="border backdrop-blur-lg">
+							<h1
+								class="p-5 bg-gradient-to-b from-white to-pink-100 text-[#e784b0] font-semibold text-xl text-wider"
+							>
+								Clases Prácticas
+							</h1>
+							<p class="p-5 text-white">
+								5 sesiones de 1 hora al volante. Aprende desde
+								cero o perfecciona tus habilidades para el
+								examen.
+							</p>
+						</div>
+						<div class="border backdrop-blur-lg">
+							<h1
+								class="p-5 bg-gradient-to-b from-white to-pink-100 text-[#e784b0] font-semibold text-xl text-wider"
+							>
+								Preparación Teórica
+							</h1>
+							<p class="p-5 text-white backdrop-blur-lg">
+								Cuestionario completo para reforzar tus
+								conocimientos teóricos antes del examen.
+							</p>
+						</div>
+						<div class="border backdrop-blur-lg">
+							<h1
+								class="p-5 bg-gradient-to-b from-white to-pink-100 text-[#e784b0] font-semibold text-xl text-wider"
+							>
+								Enfoque Personalizado
+							</h1>
+							<p class="p-5 text-white">
+								Adaptamos nuestras clases a tu nivel, ya seas
+								principiante o tengas experiencia previa.
+							</p>
+						</div>
+						<div class="border backdrop-blur-lg">
+							<h1
+								class="p-5 bg-gradient-to-b from-white to-pink-100 text-[#e784b0] font-semibold text-xl text-wider"
+							>
+								Simulacro de Examen
+							</h1>
+							<p class="p-5 text-white">
+								Practica en condiciones reales para sentirte
+								preparada el día de tu prueba oficial.
+							</p>
+						</div>
+						<div class="border backdrop-blur-lg">
+							<h1
+								class="p-5 bg-gradient-to-b from-white to-pink-100 text-[#e784b0] font-semibold text-xl text-wider"
+							>
+								Todo Incluido
+							</h1>
+							<p class="p-5 text-white">
+								Sin costos ocultos. El uso del vehículo está
+								incluido en el precio de las clases.
+							</p>
+						</div>
+						<div class="border backdrop-blur-lg">
+							<h1
+								class="p-5 bg-gradient-to-b from-white to-pink-100 text-[#e784b0] font-semibold text-xl text-wider"
+							>
+								Acompañamiento Opcional
+							</h1>
+							<p class="p-5 text-white">
+								Opción de que tu instructora te acompañe el día
+								del examen para mayor confianza.
+							</p>
+						</div>
+						<div
+							class="flex justify-center items-center md:col-span-2 lg:col-span-3 pb-10"
+						>
+							<button
+								class="text-lg px-8 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg"
+								><a href="">¡Reserva tu primera clase ahora!</a
+								></button
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="precios" class="h-[1500px]"></section>
 	</body>
 </html>
 
