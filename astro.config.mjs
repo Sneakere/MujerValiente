@@ -6,6 +6,5 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'http://www.mujeresvalientesalvolante.cl/',
-  base: '/MujerValiente/'
+  site: 'http://www.mujeresvalientesalvolante.cl/'
 });
